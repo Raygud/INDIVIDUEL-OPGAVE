@@ -1,0 +1,8 @@
+Krav Spex: 
+
+Emne: Solsystemet
+Font type: KidDrawsFontRegular-3g3L.ttf && FriendlyComics-RpX9A.otf
+
+Funktioner:
+Nem at bruge one page side 
+kontakt form

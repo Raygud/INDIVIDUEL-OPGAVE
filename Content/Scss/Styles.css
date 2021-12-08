@@ -9,6 +9,16 @@
     text-decoration: none;
     overflow: hidden;
   }
+
+  @font-face {
+    font-family: KidsDrawTitle;
+    src: url(/Content/Fonts/KidDrawsFontRegular-3g3L.ttf);
+  }
+  @font-face {
+    font-family: KidsDrawRead;
+    src: url(/Content/Fonts/FriendlyComics-RpX9A.otf);
+  }
+  }
   
   nav {
     position: relative;
@@ -41,19 +51,22 @@
   }
   
   nav ul li {
+    transition: 300ms ease-in-out;
     background-color: snow;
     text-align: center;
     width: 200px;
     line-height: 50px;
   }
 
+  nav ul li:hover{
+transform: scale(1.1);
+  }
+
   #SolarSystem{
       transition: 500ms ease-in-out;
       left: 0px;
       position: absolute;
-      background-image: url(/Content/imgs/Solar\ system.png);
       width: 19200px;
-      height: 1080px;
   }
 
   #MovingSpace{
@@ -62,15 +75,6 @@
     background-image: url(/Content/imgs/SpaceScroll.png);
     width: 19200px;
     height: 1080px;
-}
-
-.MovingSpace{
-}
-
-@keyframes SpaceMove {
-    0% {left: 0px;}
-    99% {left: -17280px;}
-    100% {left: 0px;}
 }
 
 #SpaceStop{
@@ -87,4 +91,33 @@
 
 #SpaceStop:hover{
     transform: scale(1.1);
+}
+
+Article{
+  position: absolute;
+  width: 38vw;
+  top: 5vw;
+  right: 3vw;
+}
+
+Article > h2{
+  display: flex;
+  justify-content: center;
+  font-family: KidsDrawTitle;
+  color: white;
+  font-size: 5vw;
+  margin-bottom: 2vw;
+}
+
+Article > p{
+  display: flex;
+  justify-content: center;
+  font-family: KidsDrawRead;
+  color: white;
+  margin-bottom: 2vw;
+}
+
+#PlanetSize{
+  width: 100%;
+  height: 100%;
 }
